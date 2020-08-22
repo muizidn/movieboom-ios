@@ -1,0 +1,53 @@
+load("@bazel_tools//tools/build_defs/repo:git.bzl", "git_repository")
+load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+
+http_archive(
+    name = "build_bazel_rules_swift",
+    sha256 = "cea22c0616d797e494d7844a9b604520c87f53c81de49613a7e679ec5b821620",
+    url = "https://github.com/bazelbuild/rules_swift/releases/download/0.14.0/rules_swift.0.14.0.tar.gz",
+)
+
+load(
+    "@build_bazel_rules_swift//swift:repositories.bzl",
+    "swift_rules_dependencies",
+)
+
+swift_rules_dependencies()
+
+load(
+    "@build_bazel_apple_support//lib:repositories.bzl",
+    "apple_support_dependencies",
+)
+
+apple_support_dependencies()
+
+load(
+    "@com_google_protobuf//:protobuf_deps.bzl",
+    "protobuf_deps",
+)
+
+protobuf_deps()
+
+git_repository(
+    name = "build_bazel_rules_apple",
+    remote = "https://github.com/bazelbuild/rules_apple.git",
+    tag = "0.19.0",
+)
+
+git_repository(
+    name = "build_bazel_rules_swift",
+    remote = "https://github.com/bazelbuild/rules_swift.git",
+    tag = "0.13.0",
+)
+
+git_repository(
+    name = "build_bazel_apple_support",
+    remote = "https://github.com/bazelbuild/apple_support.git",
+    tag = "0.7.2",
+)
+
+git_repository(
+    name = "bazel_skylib",
+    remote = "https://github.com/bazelbuild/bazel-skylib.git",
+    tag = "0.9.0",
+)
