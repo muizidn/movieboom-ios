@@ -1,0 +1,14 @@
+{
+  "configDefaults" : {
+    "optionSet" : {
+      "BazelBuildOptionsDebug" : {
+        "p" : "--apple_generate_dsym"
+      }
+    }
+  },
+  "packages" : [
+    ""
+  ],
+  "projectName" : "BazelAppDev",
+  "workspaceRoot" : ".."
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8a04b7f4-8c2b-4651-99a3-0cd8421f1d2b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_1575eb0a1d51ece54529002abd76b334665761bf" />
+  <component name="ProjectId" id="1gSKTdUMKUJ6qr34fKOmKqp7IPY" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="manualOrder" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/BazelAppDev.xcodeproj" />
+  </component>
+  <component name="RunManager" selected="Application.-BazelAppDev">
+    <list>
+      <item itemvalue="Application.-BazelAppDev" />
+      <item itemvalue="Application.BazelAppDevApp" />
+    </list>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8a04b7f4-8c2b-4651-99a3-0cd8421f1d2b" name="Default Changelist" comment="" />
+      <created>1598102563703</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598102563703</updated>
+      <workItem from="1598102565129" duration="2045000" />
+    </task>
+    <servers />
+  </component>
+</project>
