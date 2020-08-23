@@ -5,6 +5,10 @@ swift_library(
     name = "BazelAppDev",
     srcs = glob(["BazelAppDev/**/*.swift"]),
     data = glob(["BazelAppDev/**/*.storyboard"]),
+    deps = [
+        "//Vendor/viewdsl:ViewDSL",
+        "//Vendor/RxSwift:RxSwift",
+    ],
 )
 
 ios_application(
@@ -18,5 +22,7 @@ ios_application(
     infoplists = [":BazelAppDev/Info.plist"],
     visibility = ["//visibility:public"],
     provisioning_profile = "dev.mobileprovision",
-    deps = [":BazelAppDev"],
+    deps = [
+        ":BazelAppDev",
+    ],
 )
