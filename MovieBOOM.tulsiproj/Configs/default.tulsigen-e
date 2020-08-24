@@ -3,8 +3,8 @@
     "/BUILD"
   ],
   "buildTargets" : [
-    "//:BazelAppDev",
-    "//:BazelAppDevApp"
+    "//:MovieBOOM",
+    "//:MovieBOOMApp"
   ],
   "optionSet" : {
     "BazelBuildOptionsDebug" : {
@@ -47,9 +47,9 @@
       "p" : "$(inherited)"
     }
   },
-  "projectName" : "BazelAppDev",
+  "projectName" : "MovieBOOM",
   "sourceFilters" : [
-    "BazelAppDev",
-    "BazelAppDev/Base.lproj"
+    "MovieBOOM",
+    "MovieBOOM/Base.lproj"
   ]
 }

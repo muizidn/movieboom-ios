@@ -2,9 +2,9 @@ load("@build_bazel_rules_apple//apple:ios.bzl", "ios_application")
 load("@build_bazel_rules_swift//swift:swift.bzl", "swift_library")
 
 swift_library(
-    name = "BazelAppDev",
-    srcs = glob(["BazelAppDev/**/*.swift"]),
-    data = glob(["BazelAppDev/**/*.storyboard"]),
+    name = "MovieBOOM",
+    srcs = glob(["MovieBOOM/**/*.swift"]),
+    data = glob(["MovieBOOM/**/*.storyboard"]),
     deps = [
         "//Vendor/viewdsl:ViewDSL",
         "//Vendor/RxSwift:RxSwift"
@@ -18,18 +18,18 @@ swift_library(
 )
 
 ios_application(
-    name = "BazelAppDevApp",
-    bundle_id = "com.muiz.idn.bazelappdev",
+    name = "MovieBOOMApp",
+    bundle_id = "com.muiz.idn.movieboom.ios",
     families = [
         "iphone",
         "ipad",
     ],
     minimum_os_version = "12.0",
-    infoplists = [":BazelAppDev/Info.plist"],
+    infoplists = [":MovieBOOM/Info.plist"],
     visibility = ["//visibility:public"],
     provisioning_profile = "dev.mobileprovision",
     deps = [
-        ":BazelAppDev",
+        ":MovieBOOM",
     ],
     frameworks = [
         "//Rome:TinyConstraints"

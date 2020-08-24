@@ -4,7 +4,7 @@
       "p" : "/usr/local/bin/bazel"
     },
     "WorkspaceRootPath" : {
-      "p" : "/Users/muis/Desktop/BazelAppDev"
+      "p" : "/Users/muis/Desktop/MovieBoom/iOS"
     }
   }
 }

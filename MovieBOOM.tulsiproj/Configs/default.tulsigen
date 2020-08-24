@@ -3,8 +3,8 @@
     "/BUILD"
   ],
   "buildTargets" : [
-    "//:BazelAppDev",
-    "//:BazelAppDevApp"
+    "//:MovieBOOM",
+    "//:MovieBOOMApp"
   ],
   "optionSet" : {
     "BazelBuildOptionsDebug" : {
@@ -47,17 +47,9 @@
       "p" : "$(inherited)"
     }
   },
-  "projectName" : "BazelAppDev",
+  "projectName" : "MovieBOOM",
   "sourceFilters" : [
-    "BazelAppDev",
-    "BazelAppDev/Base.lproj",
-    "Vendor",
-    "Vendor/rules_pods",
-    "Vendor/rules_pods/BazelExtensions",
-    "Vendor/viewdsl",
-    "Vendor/viewdsl/ViewDSL",
-    "Vendor/viewdsl/ViewDSL/ViewDSL",
-    "Vendor/viewdsl/ViewDSL/ViewDSL/Extensions",
-    "Vendor/viewdsl/ViewDSL/ViewDSL/Protocols"
+    "MovieBOOM",
+    "MovieBOOM/Base.lproj"
   ]
 }

@@ -9,6 +9,6 @@
   "packages" : [
     ""
   ],
-  "projectName" : "BazelAppDev",
+  "projectName" : "MovieBOOM",
   "workspaceRoot" : ".."
 }

@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  BazelAppDev
+//  MovieBOOM
 //
 //  Created by Muis on 22/08/20.
 //  Copyright © 2020 Muis. All rights reserved.

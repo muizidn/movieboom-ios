@@ -18,7 +18,7 @@ plugin 'cocoapods-rome', { :pre_compile => Proc.new { |installer|
 # Only download the files, don't create Xcode projects
 install! 'cocoapods', integrate_targets: false
 
-target 'BazelAppDev' do
+target 'MovieBOOM' do
   pod "Firebase/Analytics"
   pod "RxSwift"
   pod "RxRelay"

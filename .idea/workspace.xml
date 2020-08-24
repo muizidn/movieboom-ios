@@ -18,12 +18,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/BazelAppDev.xcodeproj" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/MovieBOOM.xcodeproj" />
   </component>
-  <component name="RunManager" selected="Application.-BazelAppDev">
+  <component name="RunManager" selected="Application.-MovieBOOM">
     <list>
-      <item itemvalue="Application.-BazelAppDev" />
-      <item itemvalue="Application.BazelAppDevApp" />
+      <item itemvalue="Application.-MovieBOOM" />
+      <item itemvalue="Application.MovieBOOMApp" />
     </list>
   </component>
   <component name="TaskManager">

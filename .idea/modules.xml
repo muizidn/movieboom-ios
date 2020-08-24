@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/BazelAppDev.iml" filepath="$PROJECT_DIR$/.idea/BazelAppDev.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/MovieBOOM.iml" filepath="$PROJECT_DIR$/.idea/MovieBOOM.iml" />
     </modules>
   </component>
 </project>
