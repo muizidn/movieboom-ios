@@ -9,11 +9,12 @@
 import UIKit
 import RxSwift
 import ViewDSL
+import TinyConstraints
 
 class ViewController: UIViewController {
 
     private let disposeBag = DisposeBag()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .yellow

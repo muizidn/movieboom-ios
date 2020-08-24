@@ -38,3 +38,13 @@ bzl_xcode_build:
 
 bzl_pod_update:
 	bazel run @rules_pods//:update_pods -- --src_root ${PWD}
+
+tools_setup:
+	gem install cocoapods-rome
+
+pod_dependency:
+	pod install --verbose
+	
+pod_rome_list_fw_bazel:
+	ls -1 Rome | sed 's/\(.*\).framework/"\/\/Vendor\/\1:\1",/'
+
