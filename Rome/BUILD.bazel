@@ -1,0 +1,66 @@
+load("//config:custom_rules.bzl", "prebuilt_dynamic_framework")                    
+
+prebuilt_dynamic_framework(
+    name = "Firebase",
+    path = "Firebase.framework",
+)
+prebuilt_dynamic_framework(
+    name = "FirebaseAnalytics",
+    path = "FirebaseAnalytics.framework",
+)
+prebuilt_dynamic_framework(
+    name = "FirebaseCore",
+    path = "FirebaseCore.framework",
+)
+prebuilt_dynamic_framework(
+    name = "FirebaseCoreDiagnostics",
+    path = "FirebaseCoreDiagnostics.framework",
+)
+prebuilt_dynamic_framework(
+    name = "FirebaseInstallations",
+    path = "FirebaseInstallations.framework",
+)
+prebuilt_dynamic_framework(
+    name = "GoogleAppMeasurement",
+    path = "GoogleAppMeasurement.framework",
+)
+prebuilt_dynamic_framework(
+    name = "GoogleDataTransport",
+    path = "GoogleDataTransport.framework",
+)
+prebuilt_dynamic_framework(
+    name = "GoogleUtilities",
+    path = "GoogleUtilities.framework",
+)
+prebuilt_dynamic_framework(
+    name = "nanopb",
+    path = "nanopb.framework",
+)
+prebuilt_dynamic_framework(
+    name = "Nimble",
+    path = "Nimble.framework",
+)
+prebuilt_dynamic_framework(
+    name = "Pods-MovieBOOM",
+    path = "Pods-MovieBOOM.framework",
+)
+prebuilt_dynamic_framework(
+    name = "PromisesObjC",
+    path = "PromisesObjC.framework",
+)
+prebuilt_dynamic_framework(
+    name = "RxCocoa",
+    path = "RxCocoa.framework",
+)
+prebuilt_dynamic_framework(
+    name = "RxRelay",
+    path = "RxRelay.framework",
+)
+prebuilt_dynamic_framework(
+    name = "RxSwift",
+    path = "RxSwift.framework",
+)
+prebuilt_dynamic_framework(
+    name = "TinyConstraints",
+    path = "TinyConstraints.framework",
+)

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/TinyConstraints-Swift.h</key>
 		<data>
-		R9qQoHLR8/GT3eP0dgdUqbcgT9U=
+		NY+Eu6pIxpgovNQoqzfGe2o6NUA=
 		</data>
 		<key>Headers/TinyConstraints-umbrella.h</key>
 		<data>
@@ -18,19 +18,19 @@
 		</data>
 		<key>Modules/TinyConstraints.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		e4SOXv7eGk5w/fROkjDXVHlk4ss=
+		8ZcwNxLi4b8buoKRYovrstmgtRI=
 		</data>
 		<key>Modules/TinyConstraints.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		n1SSWEELleHAxt7dUwQgcXxeGkk=
+		bYCnwQG9JwUIjjy+qHGcr3pbHYc=
 		</data>
 		<key>Modules/TinyConstraints.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		e4SOXv7eGk5w/fROkjDXVHlk4ss=
+		8ZcwNxLi4b8buoKRYovrstmgtRI=
 		</data>
 		<key>Modules/TinyConstraints.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		n1SSWEELleHAxt7dUwQgcXxeGkk=
+		bYCnwQG9JwUIjjy+qHGcr3pbHYc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -43,11 +43,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R9qQoHLR8/GT3eP0dgdUqbcgT9U=
+			NY+Eu6pIxpgovNQoqzfGe2o6NUA=
 			</data>
 			<key>hash2</key>
 			<data>
-			HYcK+ofqTrY3vfJGAzyf2880wV7Du0EohLTo8hJ7QyU=
+			pT73zH9qTIPLgIquZbc0uSk2paPQuW9Y6NCfQ78jylg=
 			</data>
 		</dict>
 		<key>Headers/TinyConstraints-umbrella.h</key>
@@ -65,44 +65,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			e4SOXv7eGk5w/fROkjDXVHlk4ss=
+			8ZcwNxLi4b8buoKRYovrstmgtRI=
 			</data>
 			<key>hash2</key>
 			<data>
-			S+2BjGwc2qWZMC1k1DfHcgIs58z0vmkUX4N3jOFBVvo=
+			hMJv25EC3wNm2LfxZIJEvW/ApsbTfKke6sbOAP25FFI=
 			</data>
 		</dict>
 		<key>Modules/TinyConstraints.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			n1SSWEELleHAxt7dUwQgcXxeGkk=
+			bYCnwQG9JwUIjjy+qHGcr3pbHYc=
 			</data>
 			<key>hash2</key>
 			<data>
-			j6pMw8XpT3IlBfOCyasIrBw9tLJaKgRXUljRU3yLT4o=
+			t0EZge35GZN02abjZwqMOwve/N6zQDK2OPyPvX8UrmQ=
 			</data>
 		</dict>
 		<key>Modules/TinyConstraints.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			e4SOXv7eGk5w/fROkjDXVHlk4ss=
+			8ZcwNxLi4b8buoKRYovrstmgtRI=
 			</data>
 			<key>hash2</key>
 			<data>
-			S+2BjGwc2qWZMC1k1DfHcgIs58z0vmkUX4N3jOFBVvo=
+			hMJv25EC3wNm2LfxZIJEvW/ApsbTfKke6sbOAP25FFI=
 			</data>
 		</dict>
 		<key>Modules/TinyConstraints.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			n1SSWEELleHAxt7dUwQgcXxeGkk=
+			bYCnwQG9JwUIjjy+qHGcr3pbHYc=
 			</data>
 			<key>hash2</key>
 			<data>
-			j6pMw8XpT3IlBfOCyasIrBw9tLJaKgRXUljRU3yLT4o=
+			t0EZge35GZN02abjZwqMOwve/N6zQDK2OPyPvX8UrmQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

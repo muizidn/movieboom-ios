@@ -1,20 +1,15 @@
 load("@build_bazel_rules_apple//apple:ios.bzl", "ios_application")
 load("@build_bazel_rules_swift//swift:swift.bzl", "swift_library")
 
+load("//config:custom_rules.bzl", "prebuilt_dynamic_framework")
+
 swift_library(
     name = "MovieBOOM",
     srcs = glob(["MovieBOOM/**/*.swift"]),
     data = glob(["MovieBOOM/**/*.storyboard"]),
     deps = [
-        "//Vendor/viewdsl:ViewDSL",
-        "//Vendor/RxSwift:RxSwift"
+        "//Rome:TinyConstraints",
     ],
-    copts = [
-        "-framework",
-        "TinyConstraints",
-        "-F",
-        "Rome"
-    ]
 )
 
 ios_application(
@@ -31,7 +26,5 @@ ios_application(
     deps = [
         ":MovieBOOM",
     ],
-    frameworks = [
-        "//Rome:TinyConstraints"
-    ]
+    frameworks = []
 )

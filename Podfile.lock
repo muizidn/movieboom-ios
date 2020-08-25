@@ -61,7 +61,11 @@ PODS:
     - nanopb/encode (= 1.30905.0)
   - nanopb/decode (1.30905.0)
   - nanopb/encode (1.30905.0)
+  - Nimble (8.1.1)
   - PromisesObjC (1.2.9)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
   - RxRelay (5.1.1):
     - RxSwift (~> 5)
   - RxSwift (5.1.1)
@@ -69,6 +73,8 @@ PODS:
 
 DEPENDENCIES:
   - Firebase/Analytics
+  - Nimble
+  - RxCocoa
   - RxRelay
   - RxSwift
   - TinyConstraints
@@ -84,7 +90,9 @@ SPEC REPOS:
     - GoogleDataTransport
     - GoogleUtilities
     - nanopb
+    - Nimble
     - PromisesObjC
+    - RxCocoa
     - RxRelay
     - RxSwift
     - TinyConstraints
@@ -99,11 +107,13 @@ SPEC CHECKSUMS:
   GoogleDataTransport: 8a40cb194ad242b6f6dfe72c14fe40fc67c4dcd7
   GoogleUtilities: e121a3867449ce16b0e35ddf1797ea7a389ffdf2
   nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
+  Nimble: 5f8a2fb6fa343a7242dfdd9d42f7267419d464b2
   PromisesObjC: b48e0338dbbac2207e611750777895f7a5811b75
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   TinyConstraints: 8dd91295e56797648c7bc335dd20e1d91ec4c192
 
-PODFILE CHECKSUM: 40d17f038bfc82a1eecc78f44a64c18ab67984f3
+PODFILE CHECKSUM: eba3c904391dd62f8c3be97ce6cd5e5722e2dbd1
 
 COCOAPODS: 1.9.3

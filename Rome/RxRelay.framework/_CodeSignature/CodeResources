@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/RxRelay-Swift.h</key>
 		<data>
-		lErwZE23+F78+xvpMVqAOHJ31D4=
+		piQZbvq2ioj/fqzxcc0pNLKUGeo=
 		</data>
 		<key>Headers/RxRelay-umbrella.h</key>
 		<data>
@@ -18,19 +18,19 @@
 		</data>
 		<key>Modules/RxRelay.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		IY6w58lkBp/f+idvAqVcjEW72FI=
+		SBNBl5J1SJKKRohgKvtbhnZS6bs=
 		</data>
 		<key>Modules/RxRelay.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		8srtOJNbYg5S5Cn9ryCXl28FLWs=
+		Hju0no1zE90suLBtYv5aZlUngmM=
 		</data>
 		<key>Modules/RxRelay.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		IY6w58lkBp/f+idvAqVcjEW72FI=
+		SBNBl5J1SJKKRohgKvtbhnZS6bs=
 		</data>
 		<key>Modules/RxRelay.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		8srtOJNbYg5S5Cn9ryCXl28FLWs=
+		Hju0no1zE90suLBtYv5aZlUngmM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -43,11 +43,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lErwZE23+F78+xvpMVqAOHJ31D4=
+			piQZbvq2ioj/fqzxcc0pNLKUGeo=
 			</data>
 			<key>hash2</key>
 			<data>
-			NdlXS2Zx6b+Nxd9jo4GG9Bfj3lSPzVphTXD8upGQyWQ=
+			06sdjx+FsaClQhlf6KeB+8jSPXgAQAtrFbrLOoUa7eo=
 			</data>
 		</dict>
 		<key>Headers/RxRelay-umbrella.h</key>
@@ -65,44 +65,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IY6w58lkBp/f+idvAqVcjEW72FI=
+			SBNBl5J1SJKKRohgKvtbhnZS6bs=
 			</data>
 			<key>hash2</key>
 			<data>
-			WhEV83C+trNIc1fYPx3dS5XXTJfPwqps2Qh5WQ4qIMM=
+			ZNBT9G2NIOvAErNBbBnFv0oB1+7siRbS7GDwvoGxzfE=
 			</data>
 		</dict>
 		<key>Modules/RxRelay.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8srtOJNbYg5S5Cn9ryCXl28FLWs=
+			Hju0no1zE90suLBtYv5aZlUngmM=
 			</data>
 			<key>hash2</key>
 			<data>
-			o8em0hiflnYaSccdoOE2yR+IewKkZlYV+PrW1W6BDDg=
+			2P6uJNDsIXclFyVNqCgMih1sgAaT7oDSMHlITa4hN+Q=
 			</data>
 		</dict>
 		<key>Modules/RxRelay.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IY6w58lkBp/f+idvAqVcjEW72FI=
+			SBNBl5J1SJKKRohgKvtbhnZS6bs=
 			</data>
 			<key>hash2</key>
 			<data>
-			WhEV83C+trNIc1fYPx3dS5XXTJfPwqps2Qh5WQ4qIMM=
+			ZNBT9G2NIOvAErNBbBnFv0oB1+7siRbS7GDwvoGxzfE=
 			</data>
 		</dict>
 		<key>Modules/RxRelay.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8srtOJNbYg5S5Cn9ryCXl28FLWs=
+			Hju0no1zE90suLBtYv5aZlUngmM=
 			</data>
 			<key>hash2</key>
 			<data>
-			o8em0hiflnYaSccdoOE2yR+IewKkZlYV+PrW1W6BDDg=
+			2P6uJNDsIXclFyVNqCgMih1sgAaT7oDSMHlITa4hN+Q=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
