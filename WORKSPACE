@@ -9,7 +9,7 @@ http_archive(
 git_repository(
     name = "build_bazel_rules_apple",
     remote = "https://github.com/bazelbuild/rules_apple.git",
-    tag = "0.19.0",
+    tag = "0.20.0",
 )
 
 load(

@@ -3,12 +3,72 @@ load("@build_bazel_rules_swift//swift:swift.bzl", "swift_library")
 
 load("//config:custom_rules.bzl", "prebuilt_dynamic_framework")
 
+
+filegroup(
+    name = "AppIcon",
+    srcs = glob(["MovieBOOM/Assets.xcassets/AppIcon.appiconset/**"]),
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "Assets",
+    srcs = glob([
+        "MovieBOOM/Assets.xcassets/**/*",
+    ],
+    exclude = [
+        "MovieBOOM/Assets.xcassets/*.appiconset/**",
+    ]),
+    visibility = ["//visibility:public"],
+)
+
 swift_library(
     name = "MovieBOOM",
     srcs = glob(["MovieBOOM/**/*.swift"]),
     data = glob(["MovieBOOM/**/*.storyboard"]),
     deps = [
-        "//Rome:TinyConstraints",
+        "//Vendor/viewdsl:ViewDSL",
+        # "//Rome:Alamofire",
+        # "//Rome:AttributedLib",
+        # "//Rome:CHIPageControl",
+        # "//Rome:CocoaAsyncSocket",
+        # "//Rome:CocoaLumberjack",
+        # "//Rome:DifferenceKit",
+        # "//Rome:DropDown",
+        # "//Rome:Floaty",
+        # "//Rome:IQKeyboardManager",
+        # "//Rome:ImageSlideshow",
+        # "//Rome:JGProgressHUD",
+        # "//Rome:KeychainAccess",
+        # "//Rome:Kingfisher",
+        # "//Rome:MDFInternationalization",
+        # "//Rome:MDFTextAccessibility",
+        # "//Rome:Macaw",
+        # "//Rome:MaterialComponents",
+        # "//Rome:MidtransCoreKit",
+        # "//Rome:MidtransKit",
+        # "//Rome:MotionAnimator",
+        # "//Rome:MotionInterchange",
+        # "//Rome:Moya",
+        # "//Rome:Nantes",
+        # "//Rome:NavigationDrawer",
+        # "//Rome:NeedleFoundation",
+        # "//Rome:Nuke",
+        # "//Rome:PaperTrailLumberjack",
+        # "//Rome:ReSwift",
+        # "//Rome:ReSwiftThunk",
+        # "//Rome:Reachability",
+        # "//Rome:Rswift",
+        # "//Rome:RxCocoa",
+        # "//Rome:RxRelay",
+        # "//Rome:RxSwift",
+        # "//Rome:SWXMLHash",
+        # "//Rome:Sentry",
+        # "//Rome:SwiftyImage",
+        # "//Rome:SwiftyJSON",
+        # "//Rome:TinyConstraints",
+        # "//Rome:ViewDSL",
+        # "//Rome:XLPagerTabStrip",
+        # "//Rome:nanopb",
     ],
 )
 
@@ -19,10 +79,12 @@ ios_application(
         "iphone",
         "ipad",
     ],
+    app_icons = [":AppIcon"],
+    resources = [":Assets"],
     minimum_os_version = "12.0",
     infoplists = [":MovieBOOM/Info.plist"],
     visibility = ["//visibility:public"],
-    provisioning_profile = "dev.mobileprovision",
+    provisioning_profile = "release.mobileprovision",
     deps = [
         ":MovieBOOM",
     ],
