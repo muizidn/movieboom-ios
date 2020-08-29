@@ -7,39 +7,10 @@
 //
 
 import UIKit
-// import AttributedLib
-// import CHIPageControl
-// import CommonCrypto
-// import Darwin
-// import DifferenceKit
-// import DropDown
-// import Floaty
-// import Foundation
-// import IQKeyboardManager
-// import ImageSlideshow
-// import JGProgressHUD
-// import KeychainAccess
-// import Kingfisher
-// import Macaw
-// import MaterialComponents
-// import MidtransKit
-// import Moya
-// import Nantes
-// import NavigationDrawer
-// import PaperTrailLumberjack
-// import ReSwift
-// import ReSwiftThunk
-// import Rswift
-// import RxCocoa
-// import RxSwift
-// import Sentry
-// import SwiftyImage
-// import SwiftyJSON
-// import TinyConstraints
-// import UIKit
 import ViewDSL
-// import WebKit
-// import XLPagerTabStrip
+import NeedleFoundation
+import Starscream
+import Apollo
 
 class ViewController: UIViewController {
 
@@ -57,3 +28,17 @@ class ViewController: UIViewController {
     }
 }
 
+class Network {
+  static let shared = Network() 
+    
+  private(set) lazy var apollo = ApolloClient(url: URL(string: "http://localhost:8080/graphql")!)
+}
+
+var myws: WebSocket!
+
+func Starscreams() {
+  var request = URLRequest(url: URL(string: "http://localhost:8080")!)
+  request.timeoutInterval = 5
+  myws = WebSocket(request: request)
+  myws.connect()
+}

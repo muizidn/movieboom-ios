@@ -1,0 +1,53 @@
+load("@build_bazel_rules_apple//apple:ios.bzl", "ios_application")
+load("@build_bazel_rules_swift//swift:swift.bzl", "swift_library")
+
+load("//config:custom_rules.bzl", "prebuilt_dynamic_framework")
+
+
+filegroup(
+    name = "AppIcon",
+    srcs = glob(["Assets.xcassets/AppIcon.appiconset/**"]),
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "Assets",
+    srcs = glob([
+        "Assets.xcassets/**/*",
+    ],
+    exclude = [
+        "Assets.xcassets/*.appiconset/**",
+    ]),
+    visibility = ["//visibility:public"],
+)
+
+swift_library(
+    name = "MovieBOOM",
+    srcs = glob(["**/*.swift"]),
+    data = glob(["**/*.storyboard"]),
+    deps = [
+        "//Vendor/viewdsl:ViewDSL",
+        "//Vendor/NeedleFoundation",
+        "//Vendor/Starscream",
+        "//Vendor/Apollo"
+    ],
+)
+
+ios_application(
+    name = "MovieBOOMApp",
+    bundle_id = "com.muiz.idn.movieboom.ios",
+    families = [
+        "iphone",
+        "ipad",
+    ],
+    app_icons = [":AppIcon"],
+    resources = [":Assets"],
+    minimum_os_version = "12.0",
+    infoplists = ["Info.plist"],
+    visibility = ["//visibility:public"],
+    provisioning_profile = "provisioning_profiles/release.mobileprovision",
+    deps = [
+        ":MovieBOOM",
+    ],
+    frameworks = []
+)

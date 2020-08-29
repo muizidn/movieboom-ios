@@ -4,7 +4,7 @@ bzl_ipa_build: bzl_xcode_build
 
 bzl_xcode_build:
 	/usr/local/bin/bazel \
-		build //:MovieBOOMApp \
+		build //MovieBOOM:MovieBOOMApp \
 		--verbose_failures \
 		--bes_outerr_buffer_size=0 \
 		--apple_generate_dsym \
@@ -18,7 +18,7 @@ bzl_xcode_build:
 		--output_groups=tulsi_outputs,default
 
 bzl_build:
-	bazel build //:MovieBOOMApp
+	bazel build //MovieBOOM:MovieBOOMApp
 
 bzl_pod_update:
 	bazel run @rules_pods//:update_pods -- --src_root ${PWD}
