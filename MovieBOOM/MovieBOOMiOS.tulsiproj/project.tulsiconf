@@ -1,0 +1,14 @@
+{
+  "configDefaults" : {
+    "optionSet" : {
+      "BazelBuildOptionsDebug" : {
+        "p" : "--apple_generate_dsym"
+      }
+    }
+  },
+  "packages" : [
+    "MovieBOOM"
+  ],
+  "projectName" : "MovieBOOMiOS",
+  "workspaceRoot" : "../.."
+}

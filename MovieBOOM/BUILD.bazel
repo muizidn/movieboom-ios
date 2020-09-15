@@ -3,7 +3,6 @@ load("@build_bazel_rules_swift//swift:swift.bzl", "swift_library")
 
 load("//config:custom_rules.bzl", "prebuilt_dynamic_framework")
 
-
 filegroup(
     name = "AppIcon",
     srcs = glob(["Assets.xcassets/AppIcon.appiconset/**"]),
@@ -24,12 +23,27 @@ filegroup(
 swift_library(
     name = "MovieBOOM",
     srcs = glob(["**/*.swift"]),
-    data = glob(["**/*.storyboard"]),
+    data = glob([
+        "**/*.storyboard",
+        "**/*.xib",
+        "**/*.xcassets/**",
+        "**/*.plist"
+    ]),
     deps = [
         "//Vendor/viewdsl:ViewDSL",
         "//Vendor/NeedleFoundation",
         "//Vendor/Starscream",
-        "//Vendor/Apollo"
+        "//Vendor/Apollo",
+        "//Vendor/OpenCombine",
+        "//Vendor/OpenCombineDispatch",
+        "//Vendor/SwiftyJSON",
+        "//Vendor/KeychainAccess",
+        "//Vendor/Rswift",
+        "//Vendor/ReactiveSwift",
+        "//Rome:Keys",
+        "//Vendor/BonMot",
+        "//Vendor/Nuke",
+        "//Vendor/Kingfisher"
     ],
 )
 
@@ -43,11 +57,32 @@ ios_application(
     app_icons = [":AppIcon"],
     resources = [":Assets"],
     minimum_os_version = "12.0",
-    infoplists = ["Info.plist"],
+    infoplists = [
+        "Plist_Info.plist",
+        "Plist_Keychain.plist"
+    ],
     visibility = ["//visibility:public"],
-    provisioning_profile = "provisioning_profiles/release.mobileprovision",
+    provisioning_profile = select({
+        "production":"//provisioning_profiles:release.mobileprovision",
+        "development":"//provisioning_profiles:dev.mobileprovision",
+    }),
     deps = [
         ":MovieBOOM",
     ],
     frameworks = []
+)
+
+
+config_setting(
+    name = "development",
+    values = {
+        "compilation_mode": "dbg"
+    }
+)
+
+config_setting(
+    name = "production",
+    values = {
+        "compilation_mode": "opt"
+    }
 )

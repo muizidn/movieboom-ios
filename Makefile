@@ -35,3 +35,10 @@ pod_rome_list_fw_bazel:
 buildnumber = $(shell expr `/usr/libexec/PlistBuddy -c "Print :CFBundleVersion" MovieBOOM/Info.plist` + 1)
 plist_increase_cfbundleversion:
 	/usr/libexec/PlistBuddy -c "Set :CFBundleVersion ${buildnumber}" MovieBOOM/Info.plist
+
+needle_generate:
+	needle generate MovieBOOM/App_NeedleGenerated.swift MovieBOOM
+
+rswift_generate:
+	make -C tools/rswift generate
+	mv tools/rswift/App_R.generated.swift MovieBOOM

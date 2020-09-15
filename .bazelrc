@@ -1,6 +1,9 @@
+build --incompatible_strict_action_env
+run --incompatible_strict_action_env
+
 build \
   --apple_platform_type=ios \
-  --ios_minimum_os=11.0 \
+  --ios_minimum_os=12.0 \
   --ios_simulator_device="iPhone 11" \
   --ios_simulator_version=13.3 \
   --verbose_failures \

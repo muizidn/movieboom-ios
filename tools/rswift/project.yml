@@ -1,0 +1,25 @@
+name: rswift
+targets:
+  rswift:
+    type: framework
+    platform: iOS
+    preBuildScripts:
+      - script: '"$SRCROOT/rswift" generate "$SRCROOT/App_R.generated.swift"'
+        name: Generate R.swift
+        inputFiles:
+          - $TEMP_DIR/rswift-lastrun
+        outputFiles:
+          - $SRCROOT/App_R.generated.swift
+    sources:
+      - path: "Sources"
+        includes:
+          - "Info.plist"
+      - path: "../../MovieBOOM"
+        includes:
+          - "**/*.storyboard"
+          - "**/*.xib"
+          - "**/*.xcassets"
+          - "**/*.strings"
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.foo.bar
+      CODE_SIGN_IDENTITY: ""

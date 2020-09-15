@@ -1,0 +1,139 @@
+{
+  "additionalFilePaths" : [
+    "MovieBOOM/BUILD"
+  ],
+  "buildTargets" : [
+    "//MovieBOOM:MovieBOOM",
+    "//MovieBOOM:MovieBOOMApp"
+  ],
+  "optionSet" : {
+    "BazelBuildOptionsDebug" : {
+      "p" : "$(inherited)"
+    },
+    "BazelBuildOptionsRelease" : {
+      "p" : "$(inherited)"
+    },
+    "BazelBuildStartupOptionsDebug" : {
+      "p" : "$(inherited)"
+    },
+    "BazelBuildStartupOptionsRelease" : {
+      "p" : "$(inherited)"
+    },
+    "BuildActionPostActionScript" : {
+      "p" : "$(inherited)"
+    },
+    "BuildActionPreActionScript" : {
+      "p" : "$(inherited)"
+    },
+    "CommandlineArguments" : {
+      "p" : "$(inherited)"
+    },
+    "EnvironmentVariables" : {
+      "p" : "$(inherited)"
+    },
+    "LaunchActionPostActionScript" : {
+      "p" : "$(inherited)"
+    },
+    "LaunchActionPreActionScript" : {
+      "p" : "$(inherited)"
+    },
+    "ProjectGenerationBazelStartupOptions" : {
+      "p" : "$(inherited)"
+    },
+    "TestActionPostActionScript" : {
+      "p" : "$(inherited)"
+    },
+    "TestActionPreActionScript" : {
+      "p" : "$(inherited)"
+    }
+  },
+  "projectName" : "MovieBOOMiOS",
+  "sourceFilters" : [
+    "MovieBOOM",
+    "MovieBOOM/Base.lproj",
+    "Rome",
+    "Vendor",
+    "Vendor/Apollo",
+    "Vendor/Apollo/Sources",
+    "Vendor/Apollo/Sources/Apollo",
+    "Vendor/Apollo/Sources/ApolloCore",
+    "Vendor/KeychainAccess",
+    "Vendor/KeychainAccess/Lib",
+    "Vendor/KeychainAccess/Lib/KeychainAccess",
+    "Vendor/NeedleFoundation",
+    "Vendor/NeedleFoundation/Sources",
+    "Vendor/NeedleFoundation/Sources/NeedleFoundation",
+    "Vendor/NeedleFoundation/Sources/NeedleFoundation/Internal",
+    "Vendor/NeedleFoundation/Sources/NeedleFoundation/Pluginized",
+    "Vendor/NeedleFoundation/Sources/NeedleFoundation/Pluginized/Internal",
+    "Vendor/NeedleFoundation/Sources/NeedleFoundationTest",
+    "Vendor/OpenCombine",
+    "Vendor/OpenCombine/Sources",
+    "Vendor/OpenCombine/Sources/COpenCombineHelpers",
+    "Vendor/OpenCombine/Sources/COpenCombineHelpers/include",
+    "Vendor/OpenCombine/Sources/OpenCombine",
+    "Vendor/OpenCombine/Sources/OpenCombine/Helpers",
+    "Vendor/OpenCombine/Sources/OpenCombine/Publishers",
+    "Vendor/OpenCombine/Sources/OpenCombine/Subscribers",
+    "Vendor/OpenCombine/Sources/OpenCombineDispatch",
+    "Vendor/OpenCombineDispatch",
+    "Vendor/ReactiveSwift",
+    "Vendor/ReactiveSwift/Sources",
+    "Vendor/Rswift",
+    "Vendor/Rswift/Library",
+    "Vendor/Rswift/Library/Core",
+    "Vendor/Rswift/Library/Foundation",
+    "Vendor/Rswift/Library/UIKit",
+    "Vendor/Starscream",
+    "Vendor/Starscream/Sources",
+    "Vendor/Starscream/Sources/Starscream",
+    "Vendor/SwiftyJSON",
+    "Vendor/SwiftyJSON/Source",
+    "Vendor/SwiftyJSON/Source/SwiftyJSON",
+    "Vendor/rules_pods",
+    "Vendor/rules_pods/BazelExtensions",
+    "Vendor/viewdsl",
+    "Vendor/viewdsl/ViewDSL",
+    "Vendor/viewdsl/ViewDSL/ViewDSL",
+    "Vendor/viewdsl/ViewDSL/ViewDSL/Extensions",
+    "Vendor/viewdsl/ViewDSL/ViewDSL/Protocols",
+    "bazel-tulsi-includes",
+    "bazel-tulsi-includes/x",
+    "bazel-tulsi-includes/x/x",
+    "bazel-tulsi-includes/x/x/Vendor",
+    "bazel-tulsi-includes/x/x/Vendor/Apollo",
+    "bazel-tulsi-includes/x/x/Vendor/KeychainAccess",
+    "bazel-tulsi-includes/x/x/Vendor/NeedleFoundation",
+    "bazel-tulsi-includes/x/x/Vendor/OpenCombine",
+    "bazel-tulsi-includes/x/x/Vendor/Rswift",
+    "bazel-tulsi-includes/x/x/Vendor/Starscream",
+    "bazel-tulsi-includes/x/x/Vendor/SwiftyJSON",
+    "bazel-tulsi-includes/x/x/Vendor/viewdsl",
+    "config",
+    "external",
+    "external/bazel_skylib",
+    "external/bazel_skylib/lib",
+    "external/bazel_skylib/rules",
+    "external/bazel_tools",
+    "external/bazel_tools/tools",
+    "external/bazel_tools/tools/build_defs",
+    "external/bazel_tools/tools/build_defs/cc",
+    "external/build_bazel_apple_support",
+    "external/build_bazel_apple_support/lib",
+    "external/build_bazel_rules_apple",
+    "external/build_bazel_rules_apple/apple",
+    "external/build_bazel_rules_apple/apple/internal",
+    "external/build_bazel_rules_apple/apple/internal/aspects",
+    "external/build_bazel_rules_apple/apple/internal/partials",
+    "external/build_bazel_rules_apple/apple/internal/partials/support",
+    "external/build_bazel_rules_apple/apple/internal/resource_actions",
+    "external/build_bazel_rules_apple/apple/internal/testing",
+    "external/build_bazel_rules_apple/apple/internal/utils",
+    "external/build_bazel_rules_swift",
+    "external/build_bazel_rules_swift/swift",
+    "external/build_bazel_rules_swift/swift/internal",
+    "external/rules_proto",
+    "external/rules_proto/proto",
+    "external/rules_proto/proto/private"
+  ]
+}
