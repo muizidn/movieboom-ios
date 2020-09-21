@@ -3,11 +3,12 @@ import SwiftyJSON
 import ReactiveSwift
 
 final class HomeController: UICollectionViewController {
+    var route: HomeComponentRoute!
+    
     private var dataSource: [JSON] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-     
         fetchData()
     }
     
@@ -30,6 +31,7 @@ final class HomeController: UICollectionViewController {
                     }
                 }
             })
+            .retry(upTo: 3)
             .startWithResult({ [unowned self] res in
                 switch res {
                 case .success(let json):
@@ -74,6 +76,7 @@ final class HomeController: UICollectionViewController {
                 withReuseIdentifier: data["type"].stringValue,
                 for: indexPath) as! HomeHeroCell
             cell.dataSource = data["dataSource"].arrayValue
+            cell.delegate = self
             return cell
         default:
             fatalError()
@@ -93,5 +96,20 @@ extension HomeController: UICollectionViewDelegateFlowLayout {
         default:
             fatalError()
         }
+    }
+}
+
+extension HomeController: HomeHeroCollCellDelegate {
+    func didTapPlay(id: Int) {
+        
+    }
+    
+    func didTapWatchlist(id: Int) {
+        
+    }
+    
+    func didTapPoster(id: Int) {
+        let vc = route.movieComponent.controller(id: id)
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

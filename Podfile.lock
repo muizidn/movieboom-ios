@@ -1,16 +1,27 @@
 PODS:
+  - GONMarkupParser (0.8.2):
+    - "NSString+Color"
   - Keys (1.0.1)
+  - "NSString+Color (1.1.4)"
 
 DEPENDENCIES:
+  - GONMarkupParser
   - Keys (from `Pods/CocoaPodsKeys`)
+
+SPEC REPOS:
+  trunk:
+    - GONMarkupParser
+    - "NSString+Color"
 
 EXTERNAL SOURCES:
   Keys:
     :path: Pods/CocoaPodsKeys
 
 SPEC CHECKSUMS:
+  GONMarkupParser: edacf99b45329b5a6626c70a17754963ca74b106
   Keys: a576f4c9c1c641ca913a959a9c62ed3f215a8de9
+  "NSString+Color": ea9e33d498d634adf56766c606c9128822094473
 
-PODFILE CHECKSUM: dc14f5b81ae8b28d992ced41bd5d8362bb93b7e6
+PODFILE CHECKSUM: 02d68546e34e953a77437f6b7112486da0238905
 
 COCOAPODS: 1.9.3

@@ -32,23 +32,10 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
-                    <connections>
-                        <segue destination="Rfd-zg-ifq" kind="relationship" relationship="rootViewController" id="5PN-ij-Ex4"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I3s-eB-aMQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="616" y="-511"/>
-        </scene>
-        <!--Scene_Home-->
-        <scene sceneID="rtx-Jl-28F">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Scene_Home" id="Rfd-zg-ifq" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="1wK-eq-mP3"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vp3-Ib-Ah2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1178" y="-512"/>
         </scene>
     </scenes>
 </document>

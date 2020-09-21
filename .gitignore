@@ -1,3 +1,4 @@
+*.tulsiconf-user
 Rome
 Vendor
 *.generated.swift

@@ -4,8 +4,16 @@ import Nuke
 import Kingfisher
 import BonMot
 
+protocol HomeHeroCollCellDelegate: class {
+    func didTapPlay(id: Int)
+    func didTapWatchlist(id: Int)
+    func didTapPoster(id: Int)
+}
+
 final class HomeHeroCell: UICollectionViewCell {
     @IBOutlet weak var _collectionView: UICollectionView!
+    
+    weak var delegate: HomeHeroCollCellDelegate?
     
     var dataSource: [JSON] = [] {
         didSet {
@@ -38,7 +46,12 @@ extension HomeHeroCell: UICollectionViewDataSource {
         )
         
         URL(string: "\(cfg.images.secureBaseURL)w92\(data["poster_path"].stringValue)")
-            .do({ Nuke.loadImage(with: $0, into: cell._posterImageView) })
+            .do({
+                KF_loadImageToButtonBackground(
+                    with: $0,
+                    into: cell._posterButton
+                )
+            })
 
         cell._info.attributedText = """
             <title>\(data["original_title"].stringValue)</title>
@@ -52,6 +65,18 @@ extension HomeHeroCell: UICollectionViewDataSource {
                     .font(UIFont.systemFont(ofSize: 14, weight: .light))
                 ))
             ]))
+        
+        cell.onTapPoster = { [unowned self] in
+            self.delegate?.didTapPoster(id: data["id"].intValue)
+        }
+        
+        cell.onTapPlay = { [unowned self] in
+            self.delegate?.didTapPlay(id: data["id"].intValue)
+        }
+        
+        cell.onTapWatchlist = { [unowned self] in
+            self.delegate?.didTapWatchlist(id: data["id"].intValue)
+        }
         
         return cell
     }

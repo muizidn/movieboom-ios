@@ -76,3 +76,10 @@ new_pod_repository(
   name = "Kingfisher",
   url = "https://github.com/muizidn/Kingfisher/archive/5.15.0-alpha-bazel.zip"
 )
+
+new_pod_repository(
+  name = "Thrift",
+  url = "https://github.com/apache/thrift/archive/v0.13.0.zip"
+)
+
+load("thrift/dependencies.py")

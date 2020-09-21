@@ -24,4 +24,6 @@ final class RootComponent: BootstrapComponent {
     var dashboardComponent: DashboardComponent {
         DashboardComponent(parent: self)
     }
+    
+    var hello: String = "Hello!"
 }

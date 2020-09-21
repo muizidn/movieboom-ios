@@ -1,0 +1,22 @@
+PODS:
+  - MovieBOOMThrift (0.1.0)
+
+DEPENDENCIES:
+  - MovieBOOMThrift (from `https://github.com/muizidn/movieboomgo.git`, branch `main`)
+
+EXTERNAL SOURCES:
+  MovieBOOMThrift:
+    :branch: main
+    :git: https://github.com/muizidn/movieboomgo.git
+
+CHECKOUT OPTIONS:
+  MovieBOOMThrift:
+    :commit: e10becc2dcfb60fcc952f9d6774701e401999b40
+    :git: https://github.com/muizidn/movieboomgo.git
+
+SPEC CHECKSUMS:
+  MovieBOOMThrift: 32270a097f99f286dfaf997dde1f48a6eeaa583c
+
+PODFILE CHECKSUM: fc00fceb25e59271aed38f6e19c1278e46f90d81
+
+COCOAPODS: 1.9.3

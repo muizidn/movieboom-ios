@@ -1,26 +1,13 @@
-bzl_release_build: plist_increase_cfbundleversion bzl_xcode_build
+bzl_release_build: plist_increase_cfbundleversion
+	bazel build //MovieBOOM:MovieBOOMApp --config=release
 
-bzl_ipa_build: bzl_xcode_build
+bzl_ipa_release_build:
+	bazel build //MovieBOOM:MovieBOOMApp --config=release
 
-bzl_xcode_build:
-	/usr/local/bin/bazel \
-		build //MovieBOOM:MovieBOOMApp \
-		--verbose_failures \
-		--bes_outerr_buffer_size=0 \
-		--apple_generate_dsym \
-		--apple_platform_type=ios \
-		--ios_multi_cpus=arm64 \
-		--watchos_cpus=armv7k,arm64_32 \
-		--compilation_mode=opt \
-		--define=apple.propagate_embedded_extra_outputs=1 \
-		--features=debug_prefix_map_pwd_is_dot \
-		--noexperimental_build_event_json_file_path_conversion \
-		--output_groups=tulsi_outputs,default
+bzl_ipa_dev_build:
+	bazel build //MovieBOOM:MovieBOOMApp --config=debug
 
-bzl_build:
-	bazel build //MovieBOOM:MovieBOOMApp
-
-bzl_pod_update:
+bzl_podtobuild_update:
 	bazel run @rules_pods//:update_pods -- --src_root ${PWD}
 
 tools_setup:
@@ -32,9 +19,9 @@ pod_dependency:
 pod_rome_list_fw_bazel:
 	ls -1 Rome | sed 's/\(.*\).framework/"\/\/Vendor\/\1:\1",/'
 
-buildnumber = $(shell expr `/usr/libexec/PlistBuddy -c "Print :CFBundleVersion" MovieBOOM/Info.plist` + 1)
+buildnumber = $(shell expr `/usr/libexec/PlistBuddy -c "Print :CFBundleVersion" MovieBOOM/Plist_Info.plist` + 1)
 plist_increase_cfbundleversion:
-	/usr/libexec/PlistBuddy -c "Set :CFBundleVersion ${buildnumber}" MovieBOOM/Info.plist
+	/usr/libexec/PlistBuddy -c "Set :CFBundleVersion ${buildnumber}" MovieBOOM/Plist_Info.plist
 
 needle_generate:
 	needle generate MovieBOOM/App_NeedleGenerated.swift MovieBOOM
@@ -42,3 +29,6 @@ needle_generate:
 rswift_generate:
 	make -C tools/rswift generate
 	mv tools/rswift/App_R.generated.swift MovieBOOM
+
+thrift_pod_update:
+	make -C thrift pod_update

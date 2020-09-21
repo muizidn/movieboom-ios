@@ -46,25 +46,34 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="291"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="200" verticalHuggingPriority="251" image="thumbnail" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wyM-Ro-3s3">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="200" verticalHuggingPriority="251" image="border-rect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wyM-Ro-3s3">
                                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="180"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="180" id="8JP-1j-yX1"/>
                                                                 </constraints>
                                                             </imageView>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkbox" translatesAutoresizingMaskIntoConstraints="NO" id="tVC-5d-s7s">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d0N-Zm-uYT" userLabel="Poster Button">
                                                                 <rect key="frame" x="16" y="127" width="100" height="148"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="100" id="8jR-Od-3ll"/>
-                                                                    <constraint firstAttribute="height" constant="148" id="o1P-Wm-m3P"/>
+                                                                    <constraint firstAttribute="width" constant="100" id="9tP-w0-tug"/>
+                                                                    <constraint firstAttribute="height" constant="148" id="kA2-go-aNM"/>
                                                                 </constraints>
-                                                            </imageView>
+                                                                <state key="normal" title="Poster" backgroundImage="border-rect"/>
+                                                                <connections>
+                                                                    <action selector="_doBtnPoster" destination="qWN-6c-aez" eventType="touchUpInside" id="Jdb-Ae-suc"/>
+                                                                </connections>
+                                                            </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xOs-zo-HIv">
                                                                 <rect key="frame" x="16" y="127" width="30" height="42"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="30" id="Wrl-WE-21u"/>
                                                                     <constraint firstAttribute="height" constant="42" id="my0-T2-HNp"/>
                                                                 </constraints>
+                                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="8"/>
+                                                                <state key="normal" title="Watchlist" backgroundImage="border-rect"/>
+                                                                <connections>
+                                                                    <action selector="_doBtnWatchlist" destination="qWN-6c-aez" eventType="touchUpInside" id="fwc-b8-KSJ"/>
+                                                                </connections>
                                                             </button>
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="DUNE HERO 3 A Movie" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H1Q-da-lZO">
                                                                 <rect key="frame" x="132" y="225.33333333333334" width="266" height="49.666666666666657"/>
@@ -73,26 +82,43 @@
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                             </textView>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MzH-P5-3px">
+                                                                <rect key="frame" x="192" y="75" width="30" height="30"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="30" id="aSz-AF-6af"/>
+                                                                    <constraint firstAttribute="height" constant="30" id="fie-pX-C1a"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                                                <state key="normal" title="Play" backgroundImage="border-rect">
+                                                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="_doBtnPlay" destination="qWN-6c-aez" eventType="touchUpInside" id="MPr-2R-JKT"/>
+                                                                </connections>
+                                                            </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
-                                                            <constraint firstItem="tVC-5d-s7s" firstAttribute="leading" secondItem="O2j-41-5h8" secondAttribute="leading" constant="16" id="BxH-Z4-omQ"/>
-                                                            <constraint firstItem="xOs-zo-HIv" firstAttribute="top" secondItem="tVC-5d-s7s" secondAttribute="top" id="FPl-PO-svI"/>
+                                                            <constraint firstItem="MzH-P5-3px" firstAttribute="centerY" secondItem="wyM-Ro-3s3" secondAttribute="centerY" id="0cy-fh-6kz"/>
+                                                            <constraint firstItem="H1Q-da-lZO" firstAttribute="leading" secondItem="d0N-Zm-uYT" secondAttribute="trailing" constant="16" id="4D0-Bn-waP"/>
+                                                            <constraint firstItem="MzH-P5-3px" firstAttribute="centerX" secondItem="wyM-Ro-3s3" secondAttribute="centerX" id="7Pi-9W-VrF"/>
+                                                            <constraint firstItem="xOs-zo-HIv" firstAttribute="leading" secondItem="d0N-Zm-uYT" secondAttribute="leading" id="G65-AO-u6R"/>
                                                             <constraint firstItem="wyM-Ro-3s3" firstAttribute="leading" secondItem="O2j-41-5h8" secondAttribute="leading" id="J89-N4-l2u"/>
-                                                            <constraint firstItem="xOs-zo-HIv" firstAttribute="leading" secondItem="tVC-5d-s7s" secondAttribute="leading" id="Z2c-QO-hUS"/>
                                                             <constraint firstAttribute="trailing" secondItem="H1Q-da-lZO" secondAttribute="trailing" constant="16" id="Zlx-rM-hPr"/>
+                                                            <constraint firstItem="d0N-Zm-uYT" firstAttribute="leading" secondItem="O2j-41-5h8" secondAttribute="leading" constant="16" id="bwa-Wo-ldn"/>
                                                             <constraint firstItem="wyM-Ro-3s3" firstAttribute="top" secondItem="O2j-41-5h8" secondAttribute="top" id="c4A-gb-DwE"/>
+                                                            <constraint firstItem="xOs-zo-HIv" firstAttribute="top" secondItem="d0N-Zm-uYT" secondAttribute="top" id="eGc-T3-rst"/>
                                                             <constraint firstAttribute="trailing" secondItem="wyM-Ro-3s3" secondAttribute="trailing" id="fh4-9w-KYh"/>
-                                                            <constraint firstAttribute="bottom" secondItem="tVC-5d-s7s" secondAttribute="bottom" constant="16" id="gbY-1S-75C"/>
-                                                            <constraint firstItem="H1Q-da-lZO" firstAttribute="leading" secondItem="tVC-5d-s7s" secondAttribute="trailing" constant="16" id="kT4-2G-MdF"/>
                                                             <constraint firstAttribute="bottom" secondItem="H1Q-da-lZO" secondAttribute="bottom" constant="16" id="knx-as-qzb"/>
+                                                            <constraint firstAttribute="bottom" secondItem="d0N-Zm-uYT" secondAttribute="bottom" constant="16" id="qVq-EZ-zQA"/>
                                                             <constraint firstItem="H1Q-da-lZO" firstAttribute="top" relation="greaterThanOrEqual" secondItem="wyM-Ro-3s3" secondAttribute="bottom" constant="5" id="qXE-Pn-hzr"/>
                                                         </constraints>
                                                     </collectionViewCellContentView>
                                                     <size key="customSize" width="414" height="291"/>
                                                     <connections>
                                                         <outlet property="_info" destination="H1Q-da-lZO" id="b9R-DF-jo3"/>
-                                                        <outlet property="_posterImageView" destination="tVC-5d-s7s" id="NSC-op-pEi"/>
+                                                        <outlet property="_playButton" destination="MzH-P5-3px" id="gmO-q7-VX5"/>
+                                                        <outlet property="_posterButton" destination="d0N-Zm-uYT" id="jMn-ST-x64"/>
                                                         <outlet property="_videoThumbnail" destination="wyM-Ro-3s3" id="ulC-lL-wQa"/>
                                                         <outlet property="_watchlistButton" destination="xOs-zo-HIv" id="cc4-2k-4Hn"/>
                                                     </connections>
@@ -126,7 +152,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="checkbox" width="15" height="15"/>
-        <image name="thumbnail" width="2784" height="1676"/>
+        <image name="border-rect" width="15" height="15"/>
     </resources>
 </document>

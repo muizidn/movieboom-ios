@@ -43,7 +43,11 @@ swift_library(
         "//Rome:Keys",
         "//Vendor/BonMot",
         "//Vendor/Nuke",
-        "//Vendor/Kingfisher"
+        "//Vendor/Kingfisher",
+        "//Vendor/Thrift",
+        "//thrift:MovieBOOMThrift",
+        "//Rome:GONMarkupParser",
+        "//Rome:NSString_Color"
     ],
 )
 
